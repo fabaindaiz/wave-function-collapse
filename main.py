@@ -64,29 +64,28 @@ def hover(mouse_pos, rez, grid):
 def main():
     # loading tile images
     options = []
-    for i in range(5):
+    for i in range(12):
         # load tetris tile
         img = load_image(f"./assets/{i}.png", rez)
         options.append(Tile(img))
 
-    for i in range(5):
-        # load corner tile
-        img = load_image(f"./assets/c{i}.png", rez)
-        options.append(Tile(img))
-
     # edge conditions for tetris tiles
-    options[0].edges = [1, 1, 1, 1]
+    options[0].edges = [0, 0, 0, 0]
     options[1].edges = [1, 1, 0, 1]
     options[2].edges = [1, 1, 1, 0]
     options[3].edges = [0, 1, 1, 1]
     options[4].edges = [1, 0, 1, 1]
 
     # edge conditions for corner tiles
-    options[5].edges = [0, 0, 0, 0]
-    options[6].edges = [1, 1, 0, 0]
-    options[7].edges = [0, 1, 1, 0]
-    options[8].edges = [0, 0, 1, 1]
-    options[9].edges = [1, 0, 0, 1]
+    options[5].edges = [1, 1, 0, 0]
+    options[6].edges = [0, 1, 1, 0]
+    options[7].edges = [0, 0, 1, 1]
+    options[8].edges = [1, 0, 0, 1]
+
+    # edge condition for center tiles
+    options[9].edges = [0, 1, 0, 1]
+    options[10].edges = [1, 0, 1, 0]
+    options[11].edges = [1, 1, 1, 1]
 
     # update tile rules for each tile
     for i, tile in enumerate(options):
