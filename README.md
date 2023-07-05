@@ -1,28 +1,20 @@
 # wave-function-collapse
-A wave function collapse algorithm to procedurally generate images based on tile information.
+#### By fabaindaiz
+#### Forked from [wave-function-collapse](https://github.com/fabaindaiz/wave-function-collapse)
 
-![](./wfc_imgs/demo.png)
+A wave function collapse algorithm to procedurally generate tilemaps with integrated logic.
 
-![](./wfc_imgs/demo2.png)
 
-<h3>Assests used for the above procedural image generation</h3>
+### Requirements
+- python3
+- pygame
 
-Tile 0
+### Todo
+- restructure repository
 
-![](./assets/0.png)
 
-Tile 1
+## Instructions for use
 
-![](./assets/1.png)
+### Demo
 
-Tile 2
-
-![](./assets/2.png)
-
-Tile 3
-
-![](./assets/3.png)
-
-Tile 4
-
-![](./assets/4.png)
+![](assets/readme/demo.png)
